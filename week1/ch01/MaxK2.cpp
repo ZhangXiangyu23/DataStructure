@@ -25,8 +25,6 @@ int main()
 		}	
 	}
 	
-	
-	
 	printf("请继续读入数字，输入999表示结束\n");
 	int e;
 	scanf("%d",&e);
