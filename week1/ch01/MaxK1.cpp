@@ -16,7 +16,6 @@ int main()
 			}
 		}	
 	}
-	
 	int k;
 	printf("«Î ‰»Îk\n");
 	scanf("%d",&k);
