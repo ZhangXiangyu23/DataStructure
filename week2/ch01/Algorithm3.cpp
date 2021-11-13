@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define N 5
+#define N 640000
 
 int RandInt(int i,int j);
 void swap(int* m,int* n);

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define n 5
+#define n 2000
 
 int RandInt(int i,int j);
 bool judge(int a[],int y,int u);
