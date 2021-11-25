@@ -242,7 +242,7 @@ AVL树的命名是用两个人名的首字母拼起来命名的。这个了解�
 
 举个栗子：
 
-![未命名文件 (3)](ChapterFour.assets/未命名文件 (3).jpg)
+![example](ChapterFour.assets/example.jpg)
 
 节点B的高度是2，从其子树最低处E节点算起；深度是1，从根节点A开始算起。
 
@@ -250,25 +250,25 @@ AVL树的命名是用两个人名的首字母拼起来命名的。这个了解�
 
 1）情况一：
 
-![未命名文件 (4)](ChapterFour.assets/未命名文件 (4).jpg)
+![case1](ChapterFour.assets/case1.jpg)
 
 确定K1，K2，K3，就是从小到大排列，最小的是K1，次之的是K2，最大的是K3。然后每次调整是小中大！
 
 2）情况二：
 
-![未命名文件 (5)](ChapterFour.assets/未命名文件 (5).jpg)
+![case2](ChapterFour.assets/case2.jpg)
 
 3）情况三：
 
 第一次调整，先转化成情况一，之后再调整！
 
-![未命名文件 (6)](ChapterFour.assets/未命名文件 (6).jpg)
+![case3](ChapterFour.assets/case3.jpg)
 
 4）情况四：
 
 第一次调整，先转化成情况二，之后在调整！
 
-![未命名文件 (7)](ChapterFour.assets/未命名文件 (7).jpg)
+![case4](ChapterFour.assets/case4.jpg)
 
 ##### （3）基本操作
 
