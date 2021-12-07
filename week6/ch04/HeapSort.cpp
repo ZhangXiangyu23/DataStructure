@@ -48,9 +48,6 @@ void PercDown(int A[],int i,int N)
 	A[i]=Temp;
 }
 
-
-
-
 void HeapSort(int A[],int N)
 {
 	for(int i=N/2;i>=0;i--)
