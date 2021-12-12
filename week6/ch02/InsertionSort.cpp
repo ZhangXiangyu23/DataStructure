@@ -6,10 +6,10 @@ void InsertSort(int A[],int N);
 int main()
 {
 	int A[6]={12,0,3,-4,0,88};
-	printf("ÅÅĞòÖ®Ç°:\n");
+	printf("æ’åºä¹‹å‰:\n");
 	Show(A,6);
 	printf("\n");
-	printf("ÅÅĞòÖ®ºó:\n");
+	printf("æ’åºä¹‹å:\n");
 //	InsertionSort(A,6);
 	InsertSort(A,6);
 	Show(A,6);	
@@ -17,7 +17,7 @@ int main()
 	
 }
 
-//¼òµ¥²åÈëÅÅĞò
+//ç®€å•æ’å…¥æ’åº
 void InsertionSort(int A[],int N)
 {
 	int j;
@@ -49,7 +49,7 @@ void InsertSort(int A[],int N)
 
 
 
-//Õ¹Ê¾ 
+//å±•ç¤º 
 void Show(int A[],int N)
 {
 	for(int i=0;i<N;i++)
