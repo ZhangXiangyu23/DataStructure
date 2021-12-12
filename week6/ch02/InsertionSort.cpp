@@ -32,6 +32,7 @@ void InsertionSort(int A[],int N)
 	}	
 } 
 
+//≤‚ ‘
 void InsertSort(int A[],int N)
 {
 	int j;
