@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-struct Splaynode
+struct SplayNode
 {
     int element;
-    struct Splaynode* Left;
-    struct Splaynode* Right;
+    struct SplayNode* Left;
+    struct SplayNode* Right;
 };
-typedef struct Splaynode *Splaytree;
-typedef struct Splaynode *Position;
+typedef struct SplayNode *Splaytree;
+typedef struct SplayNode *Position;
 static Position Nullnode=NULL;
 Splaytree MakeEmpty(Splaytree t);
 Splaytree Find(int x,Splaytree t);
@@ -25,9 +25,9 @@ Splaytree Initialize()
 {
     if (Nullnode==NULL)
     {
-        Nullnode=(Splaytree)malloc(sizeof(struct Splaynode));
+        Nullnode=(Splaytree)malloc(sizeof(struct SplayNode));
         if(Nullnode==NULL)
-            printf("Out of space");
+            printf("Out of space£¡");
         Nullnode->Left=Nullnode->Right=Nullnode;
     }
     return Nullnode;
@@ -35,7 +35,7 @@ Splaytree Initialize()
 
 Splaytree Splay(int item,Position x)
 {
-    static struct Splaynode Header;
+    static struct SplayNode Header;
     Position LeftMax,RightMin;
     Header.Left=Header.Right=Nullnode;
     LeftMax=RightMin=&Header;
@@ -67,12 +67,14 @@ Splaytree Splay(int item,Position x)
         x->Left=Header.Right;
     }
 }
+
+
 Splaytree Insert(int item,Splaytree t)
 {
     static Position Newnode =NULL;
     if(Newnode==NULL)
     {
-        Newnode=(Splaytree)malloc(sizeof(struct Splaynode));
+        Newnode=(Splaytree)malloc(sizeof(struct SplayNode));
         if(Newnode==NULL)
             printf("Out of space");
     }
@@ -105,6 +107,8 @@ Splaytree Insert(int item,Splaytree t)
     Newnode=NULL;
     return t;
 }
+
+
 Splaytree Remove(int item,Splaytree t)
 {
     Position Newtree;
