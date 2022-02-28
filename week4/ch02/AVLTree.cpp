@@ -116,8 +116,7 @@ static Position SingleRotateWithLeft(Position K2)
 	K2->Height=Max(Height(K2->Left),Height(K2->Right))+1;
 	K1->Height=Max(Height(K1->Left),Height(K1->Right))+1;
 	return K1;
-	 
-		
+	 	
 } 
 
 
